@@ -24,7 +24,7 @@ body {
     text-align: center;
     margin: 32px 8px;
 }
-.prices__cards__block {
+.prices__cards__container {
     display: flex;
     justify-content: center;
     gap: 8px;
@@ -34,7 +34,7 @@ body {
 .card__item {
     background-color: #ffffff;
     border-radius: 8px;
-    width: 250px;
+    width: 20%;
     padding: 24px 16px;
     display: flex;
     flex-direction: column;
@@ -134,24 +134,42 @@ body {
     transform: rotate(45deg);
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1124px) {
     .card__item {
-        width: 200px;
+        width: 23%;
         gap: 24px;
     }
     .card__price .price__sum {
         font-size: 48px;
     }
 }
-@media (max-width: 555px) {
+@media (max-width: 768px) {
+    .prices__title {
+        margin: 18px;
+    }
     .prices__title {
         font-size: 32px;
     }
     .card__item {
-        width: 175px;
+        width: 35%;
         gap: 24px;
     }
     .card__price .price__sum {
         font-size: 36px;
+    }
+}
+@media (max-width: 576px) {
+    .prices__title {
+        font-size: 24px;
+    }
+    .card__item {
+        width: 50%;
+        gap: 18px;
+    }
+}
+@media (max-width: 425px) {
+    .card__item {
+        width: 70%;
+        gap: 12px;
     }
 }
